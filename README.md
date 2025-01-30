@@ -2,6 +2,8 @@
 
 ![WebView](images/pic2.png)
 
+![WebView](images/pic3.png)
+
 
 # TodoApp
 
