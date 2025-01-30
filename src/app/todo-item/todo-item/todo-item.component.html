@@ -1,0 +1,15 @@
+<div  class="todo-grid">
+    <div class="todo-details">
+      <button class="complete-btn" *ngIf="!todo.completed" (click)="onComplete()">Complete</button>
+      <span class="task">{{ todo.task }}</span>
+      <span>{{todo.duration | number: '1.0-2'}} hours</span>
+      <span *ngIf="todo.priority === 'low'" class="noPriority"> {{ todo.priority }}</span>
+      <span *ngIf="todo.priority === 'high'" class="upArrow">&uarr; {{todo.priority}}</span>
+      <span *ngIf="todo.priority === 'normal'" class="downArrow">&darr; {{todo.priority}}</span>
+  
+    </div>
+    <div class="todo-buttons">
+      <!-- <button *ngIf="!todo.completed" (click)="onComplete()">Complete</button> -->
+      <button (click)="onDelete()">X</button>
+      </div>
+  </div>

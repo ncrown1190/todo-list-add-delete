@@ -1,0 +1,16 @@
+<div class="add-form">
+    <h3>Enter a new task:</h3>
+    <div class="add-todo-form">
+        <input [(ngModel)]="task" type="text" placeholder="New Task" />
+        <h3>How many hours do you estimate?</h3>
+        <input [(ngModel)]="duration" type="number" placeholder="Duration (hours)" min="0.25"/>
+        <h3>Select the priority level</h3>
+        <select [(ngModel)]="priority">
+            <option value="low">Low</option>
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+        </select>
+        <button class="add-task" (click)="onAdd()">Add Task</button>
+    </div>
+</div>
+
