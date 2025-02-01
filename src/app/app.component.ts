@@ -14,14 +14,18 @@ export class AppComponent {
     { task: 'Walk the dog', completed: false, duration: 0.5, priority: 'high' }
   ];
 
-  addTask(todo: { task: string, completed: boolean, duration: number, priority: 'low' | 'normal' | 'high' }) {
-    const newTodo: Todo = {
-      task: todo.task,
-      completed: false,
-      duration: todo.duration,
-      priority: todo.priority
-    };
-    this.todos.push(newTodo);
+  // addTask(todo: { task: string, completed: boolean, duration: number, priority: 'low' | 'normal' | 'high' }) {
+  //   const newTodo: Todo = {
+  //     task: todo.task,
+  //     completed: false,
+  //     duration: todo.duration,
+  //     priority: todo.priority
+  //   };
+  //   this.todos.push(newTodo);
+  // }
+
+  addTask(todo: Todo) {    
+    this.todos.push(todo);
   }
 
   onComplete(index: number) {

@@ -37,12 +37,12 @@
     color: #dc143c;
   }
 
-  .downArrow {
-    color:  #00e3f7;
+  .downArrow {    
+    color: #b8860b;
   }
   
-  .noPriority {
-    color: #b8860b;
+  .normalPriority {
+    color:  #00e3f7;
   }
   
   .complete-btn{
